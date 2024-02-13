@@ -63,7 +63,7 @@ in
       };
 
       carrierBoard = mkOption {
-        type = types.enum [ "generic" "devkit" ];
+        type = types.enum [ "generic" "devkit" "dualorin" ];
         default = "generic";
         description = lib.mdDoc ''
           Jetson carrier board to target. Can be set to "generic" to target a generic jetson carrier board, but some things may not work.
