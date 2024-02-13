@@ -61,6 +61,12 @@ let
         --csv_file_path "${benchmarkSrc}/benchmark_csv/${benchmarkFileMapping.orin-agx.csvFile}" \
         --save_dir $out/${benchmarkFileMapping.orin-agx.modelDir}
 
+      mkdir -p $out/${benchmarkFileMapping.dualorin-agx.modelDir}
+      python3 "${benchmarkSrc}/utils/download_models.py" \
+        --all \
+        --csv_file_path "${benchmarkSrc}/benchmark_csv/${benchmarkFileMapping.orin-agx.csvFile}" \
+        --save_dir $out/${benchmarkFileMapping.dualorin-agx.modelDir}
+
       mkdir -p $out/${benchmarkFileMapping.xavier-agx.modelDir}
       python3 "${benchmarkSrc}/utils/download_models.py" \
         --all \

@@ -107,6 +107,11 @@ let
     inherit cudaPackages;
   };
 
+  orinAgxJetsonBenchmarks = pkgs.callPackage ./pkgs/jetson-benchmarks {
+  targetSom = "dualorin-agx";
+  inherit cudaPackages;
+  };
+
   supportedConfigurations = lib.listToAttrs (map
     (c: {
       name = "${c.som}-${c.carrierBoard}";
