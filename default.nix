@@ -102,14 +102,10 @@ let
     targetSom = "xavier-agx";
     inherit cudaPackages;
   };
+  
   orinAgxJetsonBenchmarks = pkgs.callPackage ./pkgs/jetson-benchmarks {
     targetSom = "orin-agx";
     inherit cudaPackages;
-  };
-
-  orinAgxJetsonBenchmarks = pkgs.callPackage ./pkgs/jetson-benchmarks {
-  targetSom = "dualorin-agx";
-  inherit cudaPackages;
   };
 
   supportedConfigurations = lib.listToAttrs (map
@@ -118,7 +114,7 @@ let
       value = c;
     }) [
     { som = "orin-agx"; carrierBoard = "devkit"; }
-    { som = "dualorin-agx"; carrierBoard = "devkit"; }
+    { som = "orin-agx"; carrierBoard = "dualorin"; }
     { som = "orin-nx"; carrierBoard = "devkit"; }
     { som = "orin-nano"; carrierBoard = "devkit"; }
     { som = "xavier-agx"; carrierBoard = "devkit"; }

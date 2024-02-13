@@ -386,12 +386,6 @@ in
                 { boardid = "3701"; boardsku = "0005"; fab = "000"; boardrev = ""; fuselevel = "fuselevel_production"; chiprev = ""; } # 64GB
               ];
 
-              dualorin-agx = [
-                { boardid = "3701"; boardsku = "0000"; fab = "300"; boardrev = ""; fuselevel = "fuselevel_production"; chiprev = ""; }
-                { boardid = "3701"; boardsku = "0004"; fab = "300"; boardrev = ""; fuselevel = "fuselevel_production"; chiprev = ""; } # 32G
-                { boardid = "3701"; boardsku = "0005"; fab = "000"; boardrev = ""; fuselevel = "fuselevel_production"; chiprev = ""; } # 64G
-              ];
-
               orin-nx = [
                 { boardid = "3767"; boardsku = "0000"; fab = "000"; boardrev = ""; fuselevel = "fuselevel_production"; chiprev = ""; } # Orin NX 16GB
                 { boardid = "3767"; boardsku = "0001"; fab = "000"; boardrev = ""; fuselevel = "fuselevel_production"; chiprev = ""; } # Orin NX 8GB

@@ -34,10 +34,6 @@ let
       csvFile = "orin-benchmarks.csv";
       modelDir = "agx_orin_benchmarks_models";
     };
-    "dualorin-agx" = {
-      csvFile = "orin-benchmarks.csv";
-      modelDir = "agx_orin_benchmarks_models";
-    };
     "xavier-agx" = {
       csvFile = "xavier-benchmarks.csv";
       modelDir = "agx_xavier_benchmarks_models";
@@ -60,12 +56,6 @@ let
         --all \
         --csv_file_path "${benchmarkSrc}/benchmark_csv/${benchmarkFileMapping.orin-agx.csvFile}" \
         --save_dir $out/${benchmarkFileMapping.orin-agx.modelDir}
-
-      mkdir -p $out/${benchmarkFileMapping.dualorin-agx.modelDir}
-      python3 "${benchmarkSrc}/utils/download_models.py" \
-        --all \
-        --csv_file_path "${benchmarkSrc}/benchmark_csv/${benchmarkFileMapping.orin-agx.csvFile}" \
-        --save_dir $out/${benchmarkFileMapping.dualorin-agx.modelDir}
 
       mkdir -p $out/${benchmarkFileMapping.xavier-agx.modelDir}
       python3 "${benchmarkSrc}/utils/download_models.py" \
