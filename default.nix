@@ -6,6 +6,7 @@
 , runCommand
 , fetchurl
 , bzip2_1_1
+, unzip
 , dpkg
 , pkgs
 , dtc
