@@ -36,7 +36,7 @@ let
 
   # we use a more recent version of bzip2 here because we hit this bug extracting nvidia's archives:
   # https://bugs.launchpad.net/ubuntu/+source/bzip2/+bug/1834494
-  bspSrc = runCommand "l4t-unpacked" { nativeBuildInputs = [ bzip2 ]; } ''
+  bspSrc = runCommand "l4t-unpacked" { nativeBuildInputs = [ bzip2_1_1 ]; } ''
     unzip -o ${src}
     mv taurotech-linux_for_tegra_tt_nixos-74a4ce4a74ba Linux_for_Tegra
     mv Linux_for_Tegra $out
