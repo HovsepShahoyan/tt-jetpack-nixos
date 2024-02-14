@@ -25,7 +25,7 @@ let
   # https://repo.download.nvidia.com/jetson/
 
   src = fetchurl {
-    url = "https://bitbucket.org/taurotech/linux_for_tegra_tt_nixos/get/74a4ce4a74ba.zip";
+    url = "https://bitbucket.org/taurotech/linux_for_tegra_tt_nixos/get/928a99f97761.zip";
     sha256 = "sha256-6LKH7bgqrqoCS7KIVxDuiX3dSUfoLIUoS5H0TCUB+gg";
   };
 
@@ -39,7 +39,7 @@ let
   # https://bugs.launchpad.net/ubuntu/+source/bzip2/+bug/1834494
   bspSrc = runCommand "l4t-unpacked" { nativeBuildInputs = [ unzip ]; } ''
     unzip -o ${src}
-    mv taurotech-linux_for_tegra_tt_nixos-74a4ce4a74ba Linux_for_Tegra
+    mv taurotech-linux_for_tegra_tt_nixos-928a99f97761 Linux_for_Tegra
     mv Linux_for_Tegra $out
   '';
 
