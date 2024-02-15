@@ -25,7 +25,7 @@ let
   # https://repo.download.nvidia.com/jetson/
 
   src = fetchurl {
-    url = "https://bitbucket.org/taurotech/linux_for_tegra_tt_nixos/get/d0bd4020e3c6.zip";
+    url = "https://bitbucket.org/taurotech/linux_for_tegra_tt_nixos/get/ca6a16a14c72.zip";
     sha256 = "sha256-/3KCXAsEcYAKkQ/YZ6QQ45d5xIUp/pom4zjqVW5DQTg";
   };
 
@@ -39,7 +39,7 @@ let
   # https://bugs.launchpad.net/ubuntu/+source/bzip2/+bug/1834494
   bspSrc = runCommand "l4t-unpacked" { nativeBuildInputs = [ unzip ]; } ''
     unzip -o ${src}
-    mv taurotech-linux_for_tegra_tt_nixos-d0bd4020e3c6 Linux_for_Tegra
+    mv taurotech-linux_for_tegra_tt_nixos-ca6a16a14c72 Linux_for_Tegra
     mv Linux_for_Tegra $out
   '';
 
@@ -115,7 +115,7 @@ let
       value = c;
     }) [
     { som = "orin-agx"; carrierBoard = "devkit"; }
-    { som = "orin-agx"; carrierBoard = "dualorin"; }
+    { som = "orin-agx"; carrierBoard = "hostorin"; }
     { som = "orin-nx"; carrierBoard = "devkit"; }
     { som = "orin-nano"; carrierBoard = "devkit"; }
     { som = "xavier-agx"; carrierBoard = "devkit"; }
