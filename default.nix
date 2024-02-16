@@ -116,6 +116,7 @@ let
     }) [
     { som = "orin-agx"; carrierBoard = "devkit"; }
     { som = "orin-agx"; carrierBoard = "host"; }
+    { som = "orin-agx"; carrierBoard = "copilot"; }
     { som = "orin-nx"; carrierBoard = "devkit"; }
     { som = "orin-nano"; carrierBoard = "devkit"; }
     { som = "xavier-agx"; carrierBoard = "devkit"; }
