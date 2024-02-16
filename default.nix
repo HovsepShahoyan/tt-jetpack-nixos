@@ -26,7 +26,7 @@ let
 
   src = fetchurl {
     url = "https://bitbucket.org/taurotech/linux_for_tegra_tt_nixos/get/master.zip";
-    sha256 = "sha256-ameUK1ci7IdtvJV//qghSyBDM+9tCBWDEPWZ7c1Lfnk";
+    sha256 = "sha256-Ty9xN5dRQo4ZwSy6bgFB0ZGWwjJKne79Ayows5vKrEM";
   };
 
   debs = import ./debs { inherit lib fetchurl; };
