@@ -39,7 +39,7 @@ let
   # https://bugs.launchpad.net/ubuntu/+source/bzip2/+bug/1834494
   bspSrc = runCommand "l4t-unpacked" { nativeBuildInputs = [ unzip ]; } ''
     unzip -o ${src}
-    mv taurotech-linux_for_tegra_tt_nixos-master Linux_for_Tegra
+    mv taurotech-linux_for_tegra_tt_nixos-84c1bc1ce88b Linux_for_Tegra
     mv Linux_for_Tegra $out
   '';
 
