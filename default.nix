@@ -115,7 +115,7 @@ let
       value = c;
     }) [
     { som = "orin-agx"; carrierBoard = "devkit"; }
-    { som = "orin-agx"; carrierBoard = "hostorin"; }
+    { som = "orin-agx"; carrierBoard = "host"; }
     { som = "orin-nx"; carrierBoard = "devkit"; }
     { som = "orin-nano"; carrierBoard = "devkit"; }
     { som = "xavier-agx"; carrierBoard = "devkit"; }
